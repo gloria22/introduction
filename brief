@@ -5,6 +5,12 @@
      defined using SQLAlchemy (or Flask-SQLAlchemy). The generated APIs
      send and receive messages in JSON format.
 3. flask.views
+    based on classes instead of functions. The main intention is that
+    you can replace parts of the implementations and this way
+    have customizable pluggable views
+    execute a different function for each HTTP method.
+    With the flask.views.MethodView you can easily do that.
+    Each HTTP method maps to a function with the same name (just in lowercase)
 3. complete flaks-restless, use wtforms-alchemy
-4. maybe plus flask-principal, wtforms
+# 4. maybe plus flask-principal, wtforms, blueprint
 5. demo is needed

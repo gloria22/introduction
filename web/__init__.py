@@ -12,3 +12,4 @@ from .views.myrestful import bp_users
 app.register_blueprint(bp_users)
 
 from .views.myrestless import manager
+from .views.mypluggableviews import *
